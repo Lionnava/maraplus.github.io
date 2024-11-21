@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta2</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <!-- Carrusel con imágenes -->
+            </div>
+        </div>
+        <h1 style="margin: 10px 0; line-height: 1.2;">BIENVENIDOS A <img src="recurso/logo_amado.png" alt="Segundo logo" style="width:40%; display: inline-block; vertical-align: middle;"></h1>
+        <div class="login-form">
+            <h2>Inicio de Conexión</h2>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="number" id="edad" placeholder="Edad" required>
+                <select id="sexo" required>
+                    <option value="" disabled selected>Sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="prefiero-no-decir">Prefiero no decir</option>
+                </select>
+                <button type="submit">Conectar</button>
+            </form>
+            <a href="#" class="not-connected-link">¿No te has conectado aún?</a>
+            <div class="footer">
+                <div class="text-links">
+                    <a href="#" style="margin: 0 10px; text-decoration: none; color: #007BFF;">Acerca de </a>
+                    <a href="#" style="margin: 0 10px; text-decoration: none; color: #007BFF;">Información </a>
+                </div>
+                <div class="social-icons">
+                    <img src="recurso/logo_social_01.png" alt="WhatsApp">
+                    <img src="recurso/logo_social_02.png" alt="Instagram">
+                    <img src="recurso/logo_social_03.png" alt="TikTok" class="icono-tiktok">
+                    <img src="recurso/logo_social_04.png" alt="LinkedIn">
+                </div>
+            </div>
+            <div class="p">
+                <p>Copyright © 2024-2025, desarrollado por LionellNava21. Reservados todos los derechos.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Contenedor de notificación tipo toast -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
