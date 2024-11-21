@@ -71,11 +71,11 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; /* Asegura que los elementos se adapten a diferentes tamaños de pantalla */
-    gap: 5px; /* Añade espacio entre los elementos */
+    gap: 12px; /* Añade espacio entre los elementos */
 }
 
 .text-links a {
-    margin: 0 5px;
+    margin: 0 12px;
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
