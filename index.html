@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a Salud Zulia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container" style="background-color: #0a0a0a;">
+        <h1 style="margin: 5px 0; line-height: 1.5;">
+            BIENVENIDOS A 
+            <img src="recurso/cobeca_001-001.png" alt="Segundo logo" class="logo">
+        </h1>
+        <div class="login-form">
+            <h2>Inicio de Conexión</h2>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="number" id="edad" placeholder="Edad" required>
+                <select id="sexo" required>
+                    <option value="" disabled selected>Sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="prefiero-no-decir">Prefiero no decir</option>
+                </select>
+                <select id="especialidad" required>
+                    <option value="" disabled selected>Especialidad</option>
+                    <option value="pediatría">Pediatría</option>
+                    <option value="ginecología">Ginecología</option>
+                    <option value="urología">Urología</option>
+                    <option value="cardiología">Cardiología</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <button type="submit">Conectar</button>
+            </form>
+            <a href="#" class="not-connected-link">¿No te has conectado aún?</a>
+            <div class="footer">
+                <div class="text-links">
+                    <a href="#" class="footer-link">Acerca de</a>
+                    <a href="#" class="footer-link">Información</a>
+                </div>
+                <div class="social-icons">
+                    <img src="recurso/logo_social_01.png" alt="WhatsApp">
+                    <img src="recurso/logo_social_02.png" alt="Instagram">
+                    <img src="recurso/logo_social_04.png" alt="LinkedIn">
+                </div>
+            </div>
+            <div class="p">
+                <p>&copy; 2024-2025, desarrollado por LionellNava21. Reservados todos los derechos.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Contenedor de notificación tipo toast -->
+    <script src="js/script.js"></script>
+</body>
+</html>
