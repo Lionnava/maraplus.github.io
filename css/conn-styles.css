@@ -10,6 +10,15 @@ body, html {
     background-color: #013A63; /* Azul petróleo para el fondo */
 }
 
+h1 {
+    color: #FFFFFF; /* Tomato color */
+}
+
+h2 {
+    color: #FFFFFF; /* Blanco */
+}
+
+
 .container {
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
@@ -184,7 +193,7 @@ body, html {
     
     .footer .text-links a,
     .footer .social-icons img {
-        margin: 3px; /* Reducir márgenes para mejorar el ajuste */
+        margin: 10px; /* Reducir márgenes para mejorar el ajuste */
     }
 }
 
@@ -192,7 +201,7 @@ body, html {
     display: block;
     margin-top: 20px;
     text-decoration: none;
-    color: #FF6347; /* Tomato color para que destaque */
+    color: #FFFFFF; /* blanco color para que destaque */
     font-weight: bold;
     font-size: 16px;
     text-align: center;

@@ -7,18 +7,29 @@ body, html {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background-color: #013A63; /* Azul petróleo para el fondo */
+	background-color: #013A63; /* Azul petróleo para el fondo */
 }
 
-.container {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Limitar el ancho máximo en pantallas grandes */
-    width: 90%; /* Ancho flexible en pantallas pequeñas */
-    margin: 20px;
+h1 {
+    color: #ff9747; /* Tomato color */
+}
+
+h2 {
+    color: #FFFFFF; /* Blanco */
+}
+
+
+.container { text-align: center; 
+background-image: url ('recurso/medical-21.'); /* Cambia 'tu_imagen.jpg' al nombre de tu archivo de imagen */ 
+background-size: cover; /* Asegura que la imagen cubra todo el contenedor */ 
+background-position: center; /* Centra la imagen en el contenedor */ 
+background-repeat: no-repeat; /* Evita que la imagen se repita */
+padding: 30px; 
+border-radius: 10px; 
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+max-width: 400px; /* Limitar el ancho máximo en pantallas grandes */ 
+width: 90%; /* Ancho flexible en pantallas pequeñas */ 
+margin: 10px; 
 }
 
 .carousel-container {
@@ -40,6 +51,16 @@ body, html {
     object-fit: contain; /* Ajustar la imagen dentro del contenedor sin cortarla */
 }
 
+.login-form { display: flex; /* Utiliza flexbox para alinear los elementos */ 
+flex-direction: column; /* Alinea los elementos en una columna */ 
+align-items: center; /* Centra los elementos horizontalmente */ 
+justify-content: center; /* Centra los elementos verticalmente */ 
+height: 100%; /* Asegura que el contenedor ocupe toda la altura disponible */ 
+padding:10px; /* Añade algo de padding para el espaciado */ 
+border-radius:10px; /* Añade bordes redondeados */ 
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra para destacar */ 
+} 
+
 .login-form input,
 .login-form select,
 .login-form button {
@@ -47,6 +68,7 @@ body, html {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
+	border-radius:10px; /* Añade bordes redondeados */ 
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
@@ -57,6 +79,7 @@ body, html {
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 .login-form button:hover {
     background-color: #0056b3;
@@ -71,11 +94,11 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; /* Asegura que los elementos se adapten a diferentes tamaños de pantalla */
-    gap: 12px; /* Añade espacio entre los elementos */
+    gap: 10px; /* Añade espacio entre los elementos */
 }
 
 .text-links a {
-    margin: 0 12px;
+    margin: 0 65px;
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
@@ -173,7 +196,7 @@ body, html {
     display: block;
     margin-top: 20px;
     text-decoration: none;
-    color: #FF6347; /* Tomato color para que destaque */
+    color: #FFFFFF; /* Blanco color para que destaque */
     font-weight: bold;
     font-size: 16px;
     text-align: center;
