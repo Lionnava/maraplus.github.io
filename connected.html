@@ -3,41 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conectando</title>
-    <link rel="stylesheet" href="css/conn-styles.css">
+    <title>Conectado</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container" style="background-color: white;">
-        <div class="carousel-container">
-            <div class="carousel" id="carousel">
-                <!-- Carrusel con imágenes -->
-            </div>
-        </div>
-        <h1 style="margin: 10px 0 10px 0; line-height: 1.2;">Somos... </h1>
-		<img src="recurso/maraplus.jpeg" alt="Segundo logo" style="width:100%">
-        <div class="login-form">
-            <h2>Inicio de Conexión</h2>
-            <div class="progress-container">
-                <div class="progress-bar" id="progress-bar"></div>
-            </div>
-            <a href="#" class="not-connected-link">¿No te has conectado aún?</a>
-            <div class="footer">
-                <div class="social-icons">
-                    <a href="https://api.whatsapp.com/send?phone=584121311982&text=Hola,%20me%20gustaría%20contactar"><img src="recurso/logo_social_01.png" alt="WhatsApp"></a>
-            <a href="https://www.instagram.com/maraplus.ve/"><img src="recurso/logo_social_02.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/company/maraplus/"><img src="recurso/logo_social_04.png" alt="LinkedIn"></a>
-                </div>
-            </div>
-            <div class="p">
-                <p style="height: 27px; position: relative; left: 0px; top: 13px; transition: none;">
-  © 2024-2025, desarrollado por 
-  <a href="http://infosaludsystems.com" style="color: inherit; text-decoration: none;">InfoSaludsystems.com</a>. 
-  Reservados todos los derechos.
-</p>
-        </div>
+    <div class="container">
+        <h1>Datos recibidos</h1>
+        <p>Correo: <span id="correo"></span></p>
+        <p>Edad: <span id="edad"></span></p>
+        <p>Sexo: <span id="sexo"></span></p>
+        <p>Especialidad: <span id="especialidad"></span></p>
     </div>
-    <!-- Contenedor de notificación tipo toast -->
-    <div id="toast" class="toast">¡La conexión se ha realizado con éxito!</div>
-    <script src="js/connected-script.js"></script>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('correo').textContent = params.get('correo');
+        document.getElementById('edad').textContent = params.get('edad');
+        document.getElementById('sexo').textContent = params.get('sexo');
+        document.getElementById('especialidad').textContent = params.get('especialidad');
+    </script>
 </body>
 </html>
