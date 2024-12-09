@@ -68,7 +68,7 @@ window.onload = () => {
             progressBar.innerHTML = width + '%';
         }
     }, 300); // Configurado para completar en 30 segundos (300ms * 100 = 30,000ms)
-};
+}
 
 // Función para mostrar notificación tipo toast
 function showToast(message) {
@@ -100,4 +100,4 @@ function showToast(message) {
                     progressBar.style.width = width + '%';
                 }
             }, 1000); // Actualizar cada 1 segundo
-        </script>
+},
