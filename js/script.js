@@ -4,13 +4,11 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const email = document.getElementById('email').value;
     const edad = document.getElementById('edad').value;
     const sexo = document.getElementById('sexo').value;
-	const especialidad = document.getElementById('especialidad').value;
 
     const formData = {
         email: email,
         edad: edad,
-        sexo: sexo,
-		especialidad:especialidad,
+        sexo: sexo
     };
 
     // Simulación de envío de datos y redirección, sin conexión a la base de datos
