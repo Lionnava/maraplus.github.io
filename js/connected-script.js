@@ -68,7 +68,7 @@ window.onload = () => {
             progressBar.innerHTML = width + '%';
         }
     }, 300); // Configurado para completar en 30 segundos (300ms * 100 = 30,000ms)
-}
+};
 
 // Función para mostrar notificación tipo toast
 function showToast(message) {
@@ -79,25 +79,3 @@ function showToast(message) {
         toast.style.visibility = 'hidden';
     }, 4000); // Ocultar el toast después de 4 segundos
 }
- // Obtener los parámetros de la URL
-            const params = new URLSearchParams(window.location.search);
-            const correo = params.get('correo');
-            const edad = params.get('edad');
-            const sexo = params.get('sexo');
-            const especialidad = params.get('especialidad');
-
-            // Simular la autenticación de Mikrotik y mostrar el progreso
-            const progressBar = document.getElementById('progress-bar');
-            let width = 0;
-            const interval = setInterval(() => {
-                if (width >= 100) {
-                    clearInterval(interval);
-                    // Redirigir a la página de planes de Mikrotik después de 20 segundos
-                    const mikrotikUrl = `http://<mikrotik_ip>/login?username=${correo}&password=${edad}`;
-                    window.location.href = mikrotikUrl;
-                } else {
-                    width += 5; // Incremento del progreso
-                    progressBar.style.width = width + '%';
-                }
-            }, 1000); // Actualizar cada 1 segundo
-},
