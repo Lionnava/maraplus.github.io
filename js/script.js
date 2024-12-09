@@ -4,11 +4,13 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const email = document.getElementById('email').value;
     const edad = document.getElementById('edad').value;
     const sexo = document.getElementById('sexo').value;
+	const especialidad = document.getElementById('especialidad').value;
 
     const formData = {
         email: email,
         edad: edad,
-        sexo: sexo
+        sexo: sexo,
+		especialidad:especialidad,
     };
 
     // Simulación de envío de datos y redirección, sin conexión a la base de datos
@@ -103,32 +105,4 @@ window.onload = () => {
         updateCarousel();  // Mostrar la primera imagen de inmediato
         setInterval(updateCarousel, 3000);  // Cambiar cada 3 segundos
     }, 1000);  // Espera un segundo para asegurar la carga de imágenes
-}
-<script>
-        function handleSubmit(event) {
-            event.preventDefault();
-
-            const correo = document.querySelector('input[name="correo"]').value;
-            const edad = document.querySelector('input[name="edad"]').value;
-            const sexo = document.querySelector('select[name="sexo"]').value;
-            const especialidad = document.querySelector('select[name="especialidad"]').value;
-
-            // Guardar datos en archivo .csv
-            const csvData = `Correo,Edad,Sexo,Especialidad\n${correo},${edad},${sexo},${especialidad}\n`;
-            const blob = new Blob([csvData], { type: 'text/csv' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.setAttribute('href', url);
-            a.setAttribute('download', 'datos.csv');
-            a.click();
-
-            // Redirigir a connected.html con los parámetros en la URL
-            const params = new URLSearchParams({
-                correo: correo,
-                edad: edad,
-                sexo: sexo,
-                especialidad: especialidad
-            });
-            window.location.href = `./connected.html?${params.toString()}`;
-        }
-    </script>
+};
