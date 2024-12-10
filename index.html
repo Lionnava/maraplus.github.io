@@ -9,14 +9,17 @@
 <body>
     <div class="container">
         <h1>BIENVENIDOS A</h1>
-        <img src="recurso/maraplus.jpeg" alt="maraplus_02" class="logo">
+        <p>Sala de espera de...</p>
+        <img src="recurso/clinica_zulia_01.png" alt="Logo Clínica Zulia" class="logo">
+        <div class="logo-container">
+            <img src="recurso/maraplus_02.png" alt="maraplus_02" class="logo_02">
+            <img src="recurso/alphasystems.png" alt="alphasystems" class="logo_02">
+        </div>
         <div class="social-icons">
-            <img src="recurso/maraplus.jpeg" alt="Logo Maraplus" class="logo">
             <a href="https://api.whatsapp.com/send?phone=584121311982&text=Hola,%20me%20gustaría%20contactar"><img src="recurso/logo_social_01.png" alt="WhatsApp"></a>
             <a href="https://www.instagram.com/maraplus.ve/"><img src="recurso/logo_social_02.png" alt="Instagram"></a>
             <a href="https://www.linkedin.com/company/maraplus/"><img src="recurso/logo_social_04.png" alt="LinkedIn"></a>
         </div>
-
         <form id="login-form" class="login-form" onsubmit="handleSubmit(event)">
             <input type="email" name="correo" placeholder="Correo" required>
             <input type="number" name="edad" placeholder="Edad" required>
@@ -34,55 +37,11 @@
                 <option value="cardiologia">Cardiología</option>
                 <option value="imagenes">Imágenes</option>
             </select>
-            <input type="submit" value="Conectar">
+            <button type="submit">Conectar</button>
         </form>
-
-        <a href="https://api.whatsapp.com/send?phone=584140688525&text=Hola,%20me%20gustaría%20conectarme." class="not-connected-link">¿No te has conectado aún?</a>
-        
         <div class="footer">
-            <a href="http://infosaludsystems.com">
-                <img src="recurso/alphasystems.png" alt="InfoSaludSystems" class="logo2">
-            </a>
-            <div class="not-connected-link">
-                <a href="#">Acerca de</a>
-                <a href="#">Información</a>
-            </div>
-            <p style="height: 27px; position: relative; left: 0px; top: 13px; transition: none;">
-                © 2024-2025, desarrollado por 
-                <a href="http://alfasystems.com" style="color: inherit; text-decoration: none;">Alfasystems.com</a>. 
-                Reservados todos los derechos.
-            </p>
+            ¿No te has conectado aún? Acerca de Información © 2024-2025, desarrollado por Afterstyles.com. Reservados todos los derechos.
         </div>
     </div>
-
-    <script src="js/connect_script.js"></script>
-    <script>
-        function handleSubmit(event) {
-            event.preventDefault();
-
-            const correo = document.querySelector('input[name="correo"]').value;
-            const edad = document.querySelector('input[name="edad"]').value;
-            const sexo = document.querySelector('select[name="sexo"]').value;
-            const especialidad = document.querySelector('select[name="especialidad"]').value;
-
-            // Guardar datos en archivo .csv
-            const csvData = `Correo,Edad,Sexo,Especialidad\n${correo},${edad},${sexo},${especialidad}\n`;
-            const blob = new Blob([csvData], { type: 'text/csv' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.setAttribute('href', url);
-            a.setAttribute('download', 'datos.csv');
-            a.click();
-
-            // Redirigir a connected.html con los parámetros en la URL
-            const params = new URLSearchParams({
-                correo: correo,
-                edad: edad,
-                sexo: sexo,
-                especialidad: especialidad
-            });
-            window.location.href = `./connected.html?${params.toString()}`;
-        }
-    </script>
 </body>
 </html>
