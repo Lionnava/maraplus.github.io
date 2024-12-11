@@ -26,11 +26,13 @@ p {
 }
 
 .logo {
-    display: block;
-    margin: 5px auto;
-    max-width: auto;
+    width: 100%;
+    max-width: 549px;
+    height: auto;
+    margin-bottom: 20px; /* Más margen debajo de la imagen */
+	margin-top: 30px;
 }
-
+    
 .logo-container {
     text-align: center;
     margin: 10px 0;
