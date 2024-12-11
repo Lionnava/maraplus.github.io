@@ -32,7 +32,7 @@ p {
     align-items: center;
     flex-wrap: wrap; /* Para que las imágenes se ajusten en varias líneas si es necesario */
     margin: 10px 0;
-    width: 100%;
+    width: 80%;
 }
 
 .logo {
