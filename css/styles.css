@@ -20,26 +20,26 @@ h1 {
     margin: 10px 0;
 }
 
-.p {
+p {
     text-align: center;
-    color: #00796b;
     margin: 5px 0;
 }
 
 .logo {
-    width: 100%;
-    max-width: 100px;
-    height: auto;
-    margin-bottom: 20px; /* Más margen debajo de la imagen */
-	margin-top: 30px;
+    display: block;
+    margin: 5px auto;
+    max-width: auto;
 }
-    
+
 .logo-container {
     text-align: center;
     margin: 10px 0;
+}
+
+.logo_02 {
     display: inline-block;
     margin: 0 5px;
-    max-width: 100px;
+    max-width: 120px;
 }
 
 .social-icons {
