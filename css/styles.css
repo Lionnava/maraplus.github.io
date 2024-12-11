@@ -33,9 +33,18 @@ p {
 }
 
 .logo-container {
-    text-align: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Para que las imágenes se ajusten en varias líneas si es necesario */
     margin: 10px 0;
+    width: 100%;
 }
+
+.logo {
+    margin: 10px; /* Espaciado opcional entre las imágenes */
+}
+
 
 .logo2 {
     display: inline-block;
