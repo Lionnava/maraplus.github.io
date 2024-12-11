@@ -32,7 +32,7 @@ p {
 }
 
 .logo-container {
-    text-align: center;
+    text-align: auto;
     margin: 10px 0;
 }
 
