@@ -25,20 +25,21 @@ p {
     margin: 10px 0;
 }
 
-.logo {
-    display: block;
-    margin: 10px auto;
-    max-width: 180px;
-}
+.logo { 
+    display: block; 
+    margin: 5px auto; 
+    max-width: 180px; 
+} 
 
-.logo-container {
-    text-align: center;
-    margin: 20px 0;
-}
+.logo-container { 
+    text-align: center; 
+    margin: 10px 0; 
+} 
 
-.logo2 {
-    display: inline-block;
-    margin: 0 10px;
+.logo2 { 
+    display: inline-block; 
+    width: 80px; /* Ajusta el tamaño según sea necesario */ 
+    height: 80px; margin: 0 5px; 
 }
 
 .social-icons {
