@@ -39,7 +39,7 @@ p {
 .logo2 { 
     display: inline-block; 
     width:100px; /* Ajusta el tamaño según sea necesario */ 
-    height: 30px; margin: 0 5px; 
+    height: 35px; margin: 0 5px; 
 }
 
 .social-icons {
