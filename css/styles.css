@@ -40,10 +40,10 @@ p {
 
 .logo_02 {
     display: inline-block;
-    margin: 0 5px;
-    max-width: 80px;
     width: 90px;
     height: 90px;
+    margin: 0 5px;
+    max-width: 80px;
 }
 
 .social-icons {
