@@ -16,13 +16,12 @@ body {
 }
 
 h1 {
-    text-align: center;
     color: #00796b;
     margin: 20px 0;
 }
 
 p {
-    text-align: center;
+    color: #00796b;
     margin: 10px 0;
 }
 
@@ -37,10 +36,10 @@ p {
     margin: 20px 0;
 }
 
-.logo_02 {
+.logo2 {
     display: inline-block;
-    width: auto;
-    height: auto;
+    width: 90px;
+    height: 90px;
     margin: 0 10px;
 }
 
@@ -59,7 +58,8 @@ p {
     height: 30px;
 }
 
-.login-form input, .login-form select {
+.login-form input,
+.login-form select {
     width: calc(100% - 20px);
     padding: 10px;
     margin: 10px 0;
