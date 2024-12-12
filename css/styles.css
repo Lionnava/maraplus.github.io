@@ -26,15 +26,15 @@ p {
     margin: 5px 0;
 }
 
-.logo {
-    display: block;
-    margin: 5px auto;
-    max-width: auto;
-}
-
 .logo-container {
     text-align: center;
     margin: 10px 0;
+    width: 100%;
+}
+
+.logo {
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .logo_02 {
