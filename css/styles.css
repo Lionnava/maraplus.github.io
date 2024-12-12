@@ -38,8 +38,8 @@ p {
 
 .logo2 { 
     display: inline-block; 
-    width:160px; /* Ajusta el tamaño según sea necesario */ 
-    height: 40px; margin: 0 5px; 
+    width:140px; /* Ajusta el tamaño según sea necesario */ 
+    height: 30px; margin: 0 5px; 
 }
 
 .social-icons {
