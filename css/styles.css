@@ -26,21 +26,18 @@ p {
     margin: 5px 0;
 }
 
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* Para que las imágenes se ajusten en varias líneas si es necesario */
-    margin: 10px 0;
-    width: 80%;
-}
-
 .logo {
-    margin: 10px; /* Espaciado opcional entre las imágenes */
+    display: block;
+    margin: 5px auto;
+    max-width: auto;
 }
 
+.logo-container {
+    text-align: center;
+    margin: 10px 0;
+}
 
-.logo2 {
+.logo_02 {
     display: inline-block;
     margin: 0 5px;
     max-width: 120px;
