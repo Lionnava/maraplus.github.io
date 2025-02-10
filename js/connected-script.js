@@ -113,7 +113,7 @@ function startCarousel() {
 // Redirigir al archivo google-auth-html después de completar el ciclo
 function redirectToGoogleAuth() {
     setTimeout(() => {
-        window.location.href = "google-auth.html"; // Reemplaza con la ruta real
+        window.location.href = "www.InfosaludSystems.com"; // Reemplaza con la ruta real
     }, shuffledImages.length * 3000 + 1000); // Tiempo total del ciclo + 1 segundo extra
 }
 
