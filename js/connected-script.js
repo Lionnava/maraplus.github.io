@@ -110,10 +110,10 @@ function startCarousel() {
     showNextImage();
 }
 
-// Redirigir al archivo google-auth-html después de completar el ciclo
+// Redirigir a www.infosaludsystems.com después de completar el ciclo
 function redirectToGoogleAuth() {
     setTimeout(() => {
-        window.location.href = "www.InfosaludSystems.com"; // Reemplaza con la ruta real
+        window.location.href = "https://www.infosaludsystems.com"; // Redirigir a www.infosaludsystems.com
     }, shuffledImages.length * 3000 + 1000); // Tiempo total del ciclo + 1 segundo extra
 }
 
