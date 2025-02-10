@@ -35,6 +35,30 @@ function checkImageExists(url, callback) {
     img.src = url;
 }
 
+// Función para animar la barra de progreso y el porcentaje
+function animateProgressBar(duration) {
+    const progressBarFill = document.getElementById("progressBarFill");
+    const progressBarText = document.getElementById("progressBarText");
+
+    let startTime = null;
+
+    function updateProgress(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const elapsedTime = timestamp - startTime;
+        const progress = Math.min((elapsedTime / duration) * 100, 100);
+
+        // Actualizar el ancho de la barra y el texto del porcentaje
+        progressBarFill.style.width = `${progress}%`;
+        progressBarText.textContent = `${Math.round(progress)}%`;
+
+        if (progress < 100) {
+            requestAnimationFrame(updateProgress); // Continuar la animación
+        }
+    }
+
+    requestAnimationFrame(updateProgress); // Iniciar la animación
+}
+
 // Función para mostrar la siguiente imagen
 function showNextImage() {
     const imageElement = document.getElementById("carouselImage");
@@ -55,17 +79,8 @@ function showNextImage() {
             progressBarFill.style.width = "0";
             progressBarText.textContent = "0%";
 
-            // Animar la barra de progreso y actualizar el porcentaje
-            let progress = 0;
-            const interval = setInterval(() => {
-                progress += 1;
-                progressBarFill.style.width = `${progress}%`;
-                progressBarText.textContent = `${progress}%`;
-
-                if (progress >= 100) {
-                    clearInterval(interval);
-                }
-            }, 30); // Actualizar cada 30ms
+            // Animar la barra de progreso durante 3 segundos (3000 ms)
+            animateProgressBar(3000);
 
             // Incrementar el índice o reiniciar el ciclo
             currentIndex++;
