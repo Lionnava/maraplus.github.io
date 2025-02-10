@@ -39,6 +39,7 @@ function checkImageExists(url, callback) {
 function showNextImage() {
     const imageElement = document.getElementById("carouselImage");
     const progressBarFill = document.getElementById("progressBarFill");
+    const progressBarText = document.getElementById("progressBarText");
 
     // Verificar si la imagen actual existe
     checkImageExists(shuffledImages[currentIndex], (exists) => {
@@ -50,11 +51,21 @@ function showNextImage() {
                 imageElement.style.opacity = 1;
             }, 100);
 
-            // Reiniciar la barra de progreso
+            // Reiniciar la barra de progreso y el porcentaje
             progressBarFill.style.width = "0";
-            setTimeout(() => {
-                progressBarFill.style.width = "100%";
-            }, 100);
+            progressBarText.textContent = "0%";
+
+            // Animar la barra de progreso y actualizar el porcentaje
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += 1;
+                progressBarFill.style.width = `${progress}%`;
+                progressBarText.textContent = `${progress}%`;
+
+                if (progress >= 100) {
+                    clearInterval(interval);
+                }
+            }, 30); // Actualizar cada 30ms
 
             // Incrementar el índice o reiniciar el ciclo
             currentIndex++;
